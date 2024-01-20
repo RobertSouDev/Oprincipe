@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <style>
+        .hidden-text {
+            display: none; /* Inicialmente, esconde o texto */
+        }
+
+       
+    </style>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="col-12 bg-secondary text-white text-center p-3">conhecimento</div>
+
+            <div class="container-fluid d-flex align-items-center row flex">
+                <div class="col-3 col-lg centered">
+                    <h1 class="text-white">O que diz a obra O Príncipe?</h1>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            
+            <hr class="text-secondary border-4">
+
+            <div class="container row d-flex">
+                <div class="span4 ">
+                    <img class="rounded mx-auto d-block" src="img/6130e7a1d0c0ef716366c7cf_Resumo-de-O-Principe-de-Maquiavel.jpg" alt="">
+                </div>
+
+                <hr class="text-secondary border-4">
+                <div class="col">
+                    <div>
+                        <h1 class="text-white">O Príncipe</h1>
+                        <p class="text-white">
+                            A intenção da obra é ensinar aos príncipes como chegar ao poder e não perdê-lo,
+                            não perder seus territórios. Maquiavel enfatizou a necessidade de se ter boas 
+                            armas e boas leis, além de comandar e defender os principados mais fracos que 
+                            estiverem em torno do território principal.
+                            <span class="hidden-text"> Algum texto adicional que está inicialmente escondido. <br>O Príncipe" foi escrito por Niccolò Maquiavel no início do século XVI, entre 1513 e 1514. O livro reflete o contexto político turbulento da época na Itália, marcado por conflitos e intrigas entre estados e governantes</p>
+                        </span>
+                        <button onclick="alternarTexto()" type="button" class="btn btn-secondary">Ler mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="text-secondary border-4">
+        </div>
+    </div>
+
+    <script>
+        function alternarTexto() {
+            var hiddenText = document.querySelector('.hidden-text');
+            if (hiddenText.style.display === 'none' || hiddenText.style.display === '') {
+                hiddenText.style.display = 'inline'; // Mostra o texto
+            } else {
+                hiddenText.style.display = 'none'; // Esconde o texto
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
